@@ -1,0 +1,177 @@
+.main{
+  background-image: linear-gradient(white, yellow);
+  margin-top: 200px;
+}
+.container{
+  display: flex;
+
+}
+h1 {
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 10px;
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+.bar-chart {
+  margin: auto;
+  padding: 10px;
+}
+
+.text {
+  font-family: "Roboto";
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.text-p {
+  font-family: "Roboto";
+}
+.axis {
+  font: 16px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-cro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Roboto";
+  width: 200px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#green-btn {
+  border: 2px solid #5ac18e;
+}
+
+#red-btn {
+  border: 2px solid #fa8072;
+}
+
+#green-btn:hover {
+  background-color: rgba(90, 193, 142, 0.1);
+}
+#red-btn:hover {
+  background-color: rgba(250, 128, 114, 0.1);
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.block-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#graph-title {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 200;
+  color: #264653;
+}
+
+#title {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 30px;
+
+  color: #264653;
+}
+
+.area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.karta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  
+}
+
+
+:root {
+  --three-dimensions-card-left-side-width: 1rem;
+}
+
+.three-dimensions-card {
+  position: relative;
+}
+
+/* The left side */
+.three-dimensions-card::before {
+  background: rgba(0, 0, 0, 0.3);
+  content: '';
+
+  /* Position */
+  top: var(--three-dimensions-card-left-side-width);
+  left: 0px;
+  position: absolute;
+  transform: translate(-100%, 0) skewY(-45deg);
+  transform-origin: left top;
+
+  /* Size */
+  height: 100%;
+  width: var(--three-dimensions-card-left-side-width);
+}
+
+/* The bottom side */
+.three-dimensions-card::after {
+  background: rgba(0, 0, 0, 0.3);
+  content: '';
+
+  /* Position */
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  transform: translate(0, 100%) skewX(-45deg);
+  transform-origin: left top;
+
+  /* Size */
+  height: var(--three-dimensions-card-left-side-width);
+  width: 100%;
+}
